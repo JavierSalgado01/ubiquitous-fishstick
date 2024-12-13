@@ -27,6 +27,7 @@ urlpatterns = [
     path('delete', views.delete, name='delete'),
     path('search', views.search, name='search'),
     path('detalles/<int:codigo>/', views.detalles, name='detalles'),
+    path('', views.principal, name='principal'),
     path('login/', views.login, name='login'),
     path('logout/', auth_views.LogoutView.as_view(next_page='login'), name='logout'),
 ]
